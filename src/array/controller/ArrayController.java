@@ -7,6 +7,7 @@ public class ArrayController
 	{
 		private ArrayFrame baseFrame;
 		private BackPack backPack;
+		private String[][] pack;
 		
 		public ArrayController()
 		{
@@ -19,9 +20,20 @@ public class ArrayController
 		
 		}
 		
-		public void getPos(int x, int y, String content)
+		public void setPos(int x, int y, String content)
 		{
 			backPack.addStuff(x, y, content);
 		}
+		
+		public void removeContent(int x, int y)
+		{
+			backPack.removeStuff(x, y);
+		}
+
+		public BackPack getBackPack()
+			{
+				return backPack;
+			}
+
 
 	}

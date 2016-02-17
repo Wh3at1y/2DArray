@@ -19,7 +19,7 @@ public class ArrayFrame extends JFrame
 		private void buildFrame()
 		{
 			setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-			setSize(400,400);
+			setSize(400,300);
 			setTitle("2D-Array Assignment");
 			setContentPane(basePanel);
 			setVisible(true);
