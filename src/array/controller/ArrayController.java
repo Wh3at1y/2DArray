@@ -7,7 +7,6 @@ public class ArrayController
 	{
 		private ArrayFrame baseFrame;
 		private BackPack backPack;
-		private String[][] pack;
 		
 		public ArrayController()
 		{

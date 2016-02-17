@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.1.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>60</y>
+      <w>290</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Package::array.controller
+Class::ArrayController
+--
+-ArrayFrame : baseFrame
+-BackPack : backPack
+--
++start() : void
++setPos(int x, int y, String content) : void
++removeContent(int x, int y) : void
++getBackPack() : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>10</x>
+      <y>30</y>
+      <w>310</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>Controller
+--
+bg=blue
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>220</y>
+      <w>290</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Package::array.controller
+Class::ArrayRunner
+--
++main(String[]args) : static void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>10</x>
+      <y>310</y>
+      <w>410</w>
+      <h>380</h>
+    </coordinates>
+    <panel_attributes>View
+--
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>440</y>
+      <w>390</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>array.view: ArrayPanel
+--
+- baseController : ArrayController
+- addButton : JButton
+- removeButton : JButton
+- showInfo : JTextArea
+- guide : JTextArea
+- userX : JTextField
+- userY : JTextField
+- userContent : JTextField
+- baseLayout : SpringLayout
+--
++ ArrayPanel(ArrayController baseController) : constructor
+- setupPanel() : void
+- setupLayout() : void
+- setupListeners() : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>340</y>
+      <w>390</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>array.view: ArrayFrame
+--
+- baseController : ArrayController
+--
++ ArrayFrame(ArrayController) : Contstructor
+- setupFrame() : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>460</x>
+      <y>40</y>
+      <w>340</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>BackPack
+--
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>470</x>
+      <y>70</y>
+      <w>290</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>Package::array.model
+Class::BackPack
+--
+-String[][] : contents
+-int : x
+-int : y
+--
++BackPack() : constructor
++addStuff(int x, int y, String content) : void
++removeStuff(int x, int y) : void
++getContents() : return String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
